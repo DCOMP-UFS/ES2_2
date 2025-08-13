@@ -258,7 +258,7 @@ def toggle_done(
     db.refresh(reminder)
     return reminder
 
-# deletar
+# deletar lembrete
 @app.delete("/reminders/{reminder_id}")
 def delete_reminder(
     reminder_id: int,
